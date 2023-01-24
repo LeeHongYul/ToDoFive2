@@ -14,7 +14,6 @@
 		5D61AA70297A72B00010AB75 /* ToDoFive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D61AA6E297A72B00010AB75 /* ToDoFive.xcdatamodeld */; };
 		5D61AA72297A72B00010AB75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D61AA71297A72B00010AB75 /* Assets.xcassets */; };
 		5D61AA75297A72B00010AB75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D61AA73297A72B00010AB75 /* LaunchScreen.storyboard */; };
-		5D61AA7D297A8A9E0010AB75 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D61AA7C297A8A9E0010AB75 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		5D61AA71297A72B00010AB75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D61AA74297A72B00010AB75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D61AA76297A72B00010AB75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D61AA7C297A8A9E0010AB75 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				5D61AA80297A8AC00010AB75 /* View */,
 				5D61AA81297A8ACA0010AB75 /* Supporting Files */,
 				5D61AA76297A72B00010AB75 /* Info.plist */,
-				5D61AA6E297A72B00010AB75 /* ToDoFive.xcdatamodeld */,
 			);
 			path = ToDoFive;
 			sourceTree = "<group>";
@@ -75,7 +72,7 @@
 		5D61AA7E297A8AA60010AB75 /* DateModel */ = {
 			isa = PBXGroup;
 			children = (
-				5D61AA7C297A8A9E0010AB75 /* Item.swift */,
+				5D61AA6E297A72B00010AB75 /* ToDoFive.xcdatamodeld */,
 			);
 			path = DateModel;
 			sourceTree = "<group>";
@@ -176,7 +173,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D61AA7D297A8A9E0010AB75 /* Item.swift in Sources */,
 				5D61AA6A297A72B00010AB75 /* TodoListViewController.swift in Sources */,
 				5D61AA70297A72B00010AB75 /* ToDoFive.xcdatamodeld in Sources */,
 				5D61AA66297A72B00010AB75 /* AppDelegate.swift in Sources */,
