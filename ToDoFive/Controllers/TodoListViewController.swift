@@ -18,7 +18,7 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+       // searchBar.delegate = self
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         //print(dataFilePath)
         // Do any additional setup after loading the view.
@@ -78,7 +78,13 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(itemArray[indexPath.row])
         
+        //itemArray[indexPath.row].setValue("Completed", forKey: "title")
+        //itemArray.remove(at: indexPath.row)
+        //context.delete(itemArray[indexPath.row])
+        
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        
+        SaveItems()
         
   /*      if itemArray[indexPath.row].done == false{
             itemArray[indexPath.row].done = true
@@ -158,5 +164,17 @@ class TodoListViewController: UITableViewController {
        print("Error fetching data from context \(error)")
        }
        }
+    
 
+}
+
+//MARK - Seach Bar methods
+extension TodoListViewController: UISearchBarDelegate{
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        let predicate = NSPredicate(format: "title CONTAINS %@", searchBar.text!)
+        
+    }
 }
